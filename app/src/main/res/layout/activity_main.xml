@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/oneOponentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/one"
+        app:layout_constraintBottom_toTopOf="@+id/threeOponentButton"
+        app:layout_constraintEnd_toEndOf="@+id/threeOponentButton" />
+
+    <Button
+        android:id="@+id/threeOponentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/three"
+        app:layout_constraintBottom_toTopOf="@+id/sixOponentButton"
+        app:layout_constraintEnd_toEndOf="@+id/sixOponentButton" />
+
+    <Button
+        android:id="@+id/sixOponentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/six"
+        app:layout_constraintBottom_toTopOf="@+id/nineOponentButton"
+        app:layout_constraintEnd_toEndOf="@+id/nineOponentButton" />
+
+    <Button
+        android:id="@+id/nineOponentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/nine"
+        app:layout_constraintBottom_toTopOf="@+id/twelveOponentButton"
+        app:layout_constraintEnd_toEndOf="@+id/twelveOponentButton" />
+
+    <Button
+        android:id="@+id/twelveOponentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/twelve"
+        app:layout_constraintBottom_toTopOf="@+id/newGameButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/newGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
+        android:text="@string/new_game_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/oneButton"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/one"
+        app:layout_constraintBottom_toTopOf="@+id/threeButton"
+        app:layout_constraintStart_toStartOf="@+id/threeButton" />
+
+    <Button
+        android:id="@+id/threeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/three"
+        app:layout_constraintBottom_toTopOf="@+id/sixButton"
+        app:layout_constraintStart_toStartOf="@+id/sixButton" />
+
+    <Button
+        android:id="@+id/sixButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/six"
+        app:layout_constraintBottom_toTopOf="@+id/nineButton"
+        app:layout_constraintStart_toStartOf="@+id/nineButton" />
+
+    <Button
+        android:id="@+id/nineButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/nine"
+        app:layout_constraintBottom_toTopOf="@+id/twelveButton"
+        app:layout_constraintStart_toStartOf="@+id/twelveButton" />
+
+    <Button
+        android:id="@+id/twelveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/twelve"
+        app:layout_constraintBottom_toTopOf="@+id/newGameButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/oponentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/oponent"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/youTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/you"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/oponentPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/oneOponentButton"
+        app:layout_constraintEnd_toEndOf="@+id/oneOponentButton"
+        app:layout_constraintStart_toStartOf="@+id/oneOponentButton"
+        app:layout_constraintTop_toBottomOf="@+id/oponentTextView" />
+
+    <TextView
+        android:id="@+id/youPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/oneButton"
+        app:layout_constraintEnd_toEndOf="@+id/oneButton"
+        app:layout_constraintStart_toStartOf="@+id/oneButton"
+        app:layout_constraintTop_toBottomOf="@+id/youTextView" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MarcadorTruco</string>
+    <string name="new_game_button">New Game</string>
+    <string name="twelve">+12</string>
+    <string name="nine">+9</string>
+    <string name="six">+6</string>
+    <string name="three">+3</string>
+    <string name="one">+1</string>
+    <string name="you">You</string>
+    <string name="oponent">Oponent</string>
+</resources>
